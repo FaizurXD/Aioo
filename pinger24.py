@@ -9,7 +9,7 @@ def ping_website(url):
         print(f"Error pinging {url}: {e}")
 
 def start_pinging():
-    website_url = 'http://example.com'  # Replace with the URL you want to ping
+    website_url = 'https://aioo-3a2a.onrender.com/'  # Replace with the URL you want to ping
     while True:
         ping_website(website_url)
         time.sleep(40)
