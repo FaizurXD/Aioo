@@ -717,9 +717,3 @@ def clean_discord_message(input_string):
 
 #---------------------------------------------Run Bot-------------------------------------------------
 bot.run(DISCORD_BOT_TOKEN)
-import subprocess
-
-if __name__ == '__main__':
-    # Start the ping script and Flask server script
-    subprocess.Popen(['python', 'pinger24.py'])
-    subprocess.Popen(['python', 'webpage24.py'])
