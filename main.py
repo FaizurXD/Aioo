@@ -4,6 +4,8 @@ import discord
 import io
 import json
 import os
+import webpage24
+import pinger24
 import random
 import threading
 import urllib
