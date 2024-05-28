@@ -20,6 +20,19 @@ from datetime import datetime
 from dotenv import load_dotenv
 import datetime
 from bs4 import BeautifulSoup
+from flask import Flask
+
+app = Flask(__name__)
+
+@app.route('/')
+def home():
+    return "Bot Has Been Started"
+
+def start_flask():
+    app.run(debug=True, port=8080)
+
+if __name__ == '__main__':
+    start_flask()
 
 message_history = {}
 intents = discord.Intents.all()
@@ -717,17 +730,3 @@ def clean_discord_message(input_string):
 
 #---------------------------------------------Run Bot-------------------------------------------------
 bot.run(DISCORD_BOT_TOKEN)
-
-from flask import Flask
-
-app = Flask(__name__)
-
-@app.route('/')
-def home():
-    return "Bot Has Been Started"
-
-def start_flask():
-    app.run(debug=True, port=8080)
-
-if __name__ == '__main__':
-    start_flask()
